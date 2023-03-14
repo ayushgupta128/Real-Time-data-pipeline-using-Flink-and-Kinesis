@@ -1,6 +1,5 @@
 %flink.ssql
 
-/*Option 'IF NOT EXISTS' can be used, to protect the existing Schema */
 DROP TABLE IF EXISTS us_accidents_stream;
 
 CREATE TABLE us_accidents_stream (
@@ -57,8 +56,8 @@ CREATE TABLE us_accidents_stream (
 PARTITIONED BY (Severity)
 WITH (
   'connector' = 'kinesis',
-  'stream' = 'prototyping-stream-01',
-  'aws.region' = 'eu-west-1',
+  'stream' = 'us-accidents-stream-1',
+  'aws.region' = 'ap-south-1',
   'scan.stream.initpos' = 'LATEST',
   'format' = 'json',
   'json.timestamp-format.standard' = 'ISO-8601'
@@ -78,8 +77,8 @@ CREATE TABLE us_accidents_stream_1_results (
 PARTITIONED BY (Severity)
 WITH (
   'connector' = 'kinesis',
-  'stream' = 'prototyping-stream-02',
-  'aws.region' = 'eu-west-1',
+  'stream' = 'us-accidents-stream-2',
+  'aws.region' = 'ap-south-1',
   'format' = 'json',
   'json.timestamp-format.standard' = 'ISO-8601'
 );
