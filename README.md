@@ -21,3 +21,10 @@ SQL, Python3
 
 ➔ Services -
 AWS S3, AWS Glue, AWS Athena, AWS Cloud9, Apache Flink, Amazon Kinesis, Amazon SNS, AWS Lambda, Amazon CloudWatch, Grafana, Apache Zepplin
+
+
+![Architecture_on_AWS](https://user-images.githubusercontent.com/127664338/225127667-c296f94a-2570-452b-80f2-4b2e31453d6e.jpg)
+
+
+
+
