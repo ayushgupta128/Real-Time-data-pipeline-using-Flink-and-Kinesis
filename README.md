@@ -27,7 +27,7 @@ AWS S3, AWS Glue, AWS Athena, AWS Cloud9, Apache Flink, Amazon Kinesis, Amazon S
 * A Kinesis Event Trigger is applied to a Lambda Function and  Severe accident cases where Severity >=4 are then reported using AWS SNS and all events are sent to    CloudWatch from where Dashboards can be created.
 
 * To Avoid Single Point of Failure Data from Kinesis data from streams is stored into AWS S3 Raw Layer using AWS Firehose.
-* AWS Glue is used to create data catalogs and databases on top of data streams.
+* AWS Glue is used to create data catalogs and databases on top of data streams using that Data Analytics is done using AWS Athena.
 
 ![Architecture_on_AWS](https://user-images.githubusercontent.com/127664338/225127667-c296f94a-2570-452b-80f2-4b2e31453d6e.jpg)
 
