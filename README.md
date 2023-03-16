@@ -20,7 +20,7 @@ Tech Stack:
 SQL, Python3
 
 ➔ Services -
-AWS S3, AWS Glue, AWS Athena, AWS Cloud9, Apache Flink, Amazon Kinesis, Amazon SNS, AWS Lambda, Amazon CloudWatch, Grafana, Apache Zepplin
+AWS S3, AWS Glue, AWS Athena, AWS Cloud9, Apache Flink, Amazon Kinesis, Amazon SNS, AWS Lambda, Amazon CloudWatch, Apache Zepplin
 
 * Data is cleaned, filtered and ingested to kinesis Data stream-1 from AWS cloud9 environment.
 * Flink is used to process the data using KDA(Kinesis Data Analytics) and data is pushed into new data stream-2.
